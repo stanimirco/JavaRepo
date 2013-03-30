@@ -9,8 +9,8 @@ public class OpenFileTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		File f = new File("test.txt");
-		
+		File f = new File("test.txt"); 
+		 
 		if (false == f.exists()){
 			System.out.println("File not found!");
 		}
