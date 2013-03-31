@@ -5,7 +5,7 @@ public class Dog {
 	private String name;
 	
 	public Dog(){
-		this.name = "Benji";
+		this("Benji");
 	}
 	
 	public Dog( String name ){
@@ -21,17 +21,10 @@ public class Dog {
 	}
 	
 	public void bark(){
+		final int UPPER_LIMIT = 5;
+		
+		for (int i = 0; i < UPPER_LIMIT; i++){
 		System.out.println("The dog " + this.name + " is currently barking.");
+		}
 	}
-	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Dog myDog = new Dog("Lassi");
-		myDog.bark();
-		myDog.setDogName("Stupid");
-		myDog.bark();
-		
-	}
-
 }
