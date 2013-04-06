@@ -2,7 +2,12 @@ package classes_14;
 
 public class Dog {
 
+	private static int countInstanses = 0;
 	private String name;
+	
+	public static int getNumberOfInstanses(){
+		return Dog.countInstanses;
+	}
 	
 	public Dog(){
 		this("Benji");
@@ -10,6 +15,7 @@ public class Dog {
 	
 	public Dog( String name ){
 		this.name = name;
+		Dog.countInstanses++;
 	}
 	
 	public String getDogName(){
